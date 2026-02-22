@@ -1,13 +1,13 @@
 # Violet
 
-Language-agnostic code legibility analyzer. Scores source files on comparative depth, verbosity, and syntactic density using information-theoretic penalty functions.
+Language-agnostic code legibility analyzer.
 
+> Work in progress — see project board for status.
 
-## Quick start
+## Build
 
 ```
 go build -o violet ./cmd/violet
-./violet path/to/source
 ```
 
 ## Project layout
