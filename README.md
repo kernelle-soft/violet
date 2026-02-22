@@ -2,8 +2,6 @@
 
 Language-agnostic code legibility analyzer.
 
-> Work in progress — see project board for status.
-
 ## Build
 
 ```
