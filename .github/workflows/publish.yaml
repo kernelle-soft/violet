@@ -1,0 +1,24 @@
+name: Publish Release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: validate
+    uses: ./.github/workflows/_validate.yaml
+    secrets: inherit
+
+  bump:
+    name: bump
+    needs: validate
+    uses: ./.github/workflows/_bump_version.yaml
+    secrets: inherit
+
+  release:
+    name: release
+    needs: bump
+    uses: ./.github/workflows/_create_release.yaml
+    secrets: inherit
