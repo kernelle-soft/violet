@@ -12,6 +12,9 @@ coverage.html
 *.swp
 *.swo
 
+# Derived from shellshock submodule
+shell/shock
+
 # OS
 .DS_Store
 Thumbs.db

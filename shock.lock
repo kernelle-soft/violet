@@ -1,0 +1,8 @@
+{
+  "go-install": {
+    "govulncheck": {
+      "version": "1.1.4",
+      "pkg": "golang.org/x/vuln/cmd/govulncheck"
+    }
+  }
+}
