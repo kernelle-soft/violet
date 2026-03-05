@@ -2,19 +2,15 @@
 violet
 *.exe
 
+# reinclude violet go module
+!cmd/violet/
+
 # Test/coverage
 coverage.out
 coverage.html
 
 # IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+.cursor/
 
 # Derived from shellshock submodule
 shell/shock
-
-# OS
-.DS_Store
-Thumbs.db
