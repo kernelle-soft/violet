@@ -9,10 +9,13 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v6
+        with:
+          submodules: recursive
+      - uses: ./shell/.shock/actions/envrc
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
       - name: Install govulncheck
-        run: go install golang.org/x/vuln/cmd/govulncheck@latest
+        run: ./shell/shock workspace govulncheck
       - name: Run govulncheck
         run: govulncheck ./...
