@@ -3,5 +3,10 @@
   "org": "kernelle-soft",
   "repo": "violet",
   "latest": "0.0.1-dev.1",
-  "stable": ""
+  "stable": "",
+  "naming": {
+    "major": "Early Development",
+    "minor": "Go Rewrite",
+    "patch": "Initial Scaffolding"
+  }
 }

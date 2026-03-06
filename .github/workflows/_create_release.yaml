@@ -64,9 +64,5 @@ jobs:
       - name: Create GitHub Release
         id: publish
         run: |
-          TAG="v$(jq -r '.latest' manifest.json)"
-          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-          gh release create "$TAG" \
-            --title "$TAG" \
-            --generate-notes \
-            violet
+          echo "tag=v$(jq -r '.latest' manifest.json)" >> "$GITHUB_OUTPUT"
+          ./shell/shock publish-release violet
