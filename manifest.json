@@ -2,8 +2,8 @@
   "name": "violet",
   "org": "kernelle-soft",
   "repo": "violet",
-  "latest": "0.0.1-alpha.2",
-  "stable": "",
+  "latest": "0.0.1",
+  "stable": "0.0.1",
   "naming": {
     "major": "Early Development",
     "minor": "Go Rewrite",
